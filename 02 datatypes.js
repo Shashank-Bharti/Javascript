@@ -32,3 +32,16 @@ console.log(typeof person);
 // 6. Arrays (lists in python)
 const myList = [1,2,3,4,5,6];
 console.log(typeof myList);
+
+// 7. BigInt
+let b = BigInt("0b10101010101010101110111111111111111")
+console.log(b);
+
+// 8. Date Object
+let currentDate = new Date();
+console.log(currentDate);
+
+// 9. Regular Expression
+let pattern = /hello/i;
+let result = pattern.test("hello, world!"); // Returns true because "Hello" matches the pattern
+console.log(result);
