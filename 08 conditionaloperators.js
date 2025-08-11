@@ -1,3 +1,5 @@
+// CONTROL FLOW
+
 // if else statement
 // if (condition) {
 //    code to be executed if condition is true
@@ -24,6 +26,30 @@ if (userAge === 26) {
 }else {
     console.log('You are too Young.');
 }
+
+// Javascript Switch Statements
+let randInt = () => {
+    a = Math.floor(Math.random()*4)
+    return a
+}
+
+const int = randInt()
+switch (int){
+    case 1 :
+        console.log('Random Integer - 1');
+        break;
+    case 2 :
+        console.log('Random Integer - 2');
+        break;
+    case 3 :
+        console.log('Random Integer - 3');
+        break;
+    default:
+        console.log('Unknown Integer');
+        
+}
+
+
 
 // Logical operator AND - '&&'
 
@@ -57,3 +83,4 @@ if (remainderAfterDivisionBySeven === 0){
     console.log('The number is neither divisible by 3,5 and 7');
     
 }
+
