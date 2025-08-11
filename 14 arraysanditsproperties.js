@@ -44,3 +44,33 @@ console.log(students);
 // SPLICE
 students.splice(1,1,'viren'); //removes elemnt at index 1 and replaces it with given string
 console.log(students);
+
+// Array Methods
+
+// Map
+let upperCaseNames = students.map(name => name.toUpperCase());
+console.log(upperCaseNames);
+
+// Filter
+let longNames = students.filter(name => name.length > 5);
+
+// Reduce 
+array= [1,2,3,4,5,6];
+
+const helperSum = (acc,curr) => acc+curr
+sum = array.reduce(helperSum,0);
+console.log(array);
+console.log(sum);
+
+// Using some 
+const lessthanfourCheck = (element) => element < 4;
+const lessthanFour =array.some(lessthanfourCheck)
+
+console.log(array);
+if (lessthanFour){
+    console.log('at least one element is less than four');
+    
+}else {
+    console.log("All elements are greater than four");
+    
+}

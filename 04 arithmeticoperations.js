@@ -10,6 +10,14 @@ console.log(a / b); // /: Division operator
 console.log(a % b); // %: Remainder (modulus) operator
 console.log(b ** 2); // **: Exponentiation operator
  
+// Assignment Operators
+let n = 10
+n += 5
+n *= 2
+n -= 2
+console.log(`n-> ${n}`);
+
+
 // Type Conversion
 
 const x = "12";
