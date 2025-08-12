@@ -19,5 +19,12 @@ My name is ${username} and I am ${age} years old.
 I love ${hobby}, and reading documentations.`
 console.log(intro);
 
+// Chaining Operator (?.)
+const obj = {name : "Shashnk",address:{city: "Patna"}};
+console.log(obj.address?.city);
+console.log(obj.address?.phone);
 
-
+for (let i = 0;i < 3;i++){
+    if (i === 1)break;
+    console.log(i);
+}

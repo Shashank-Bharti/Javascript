@@ -1,4 +1,5 @@
-// ternary operators
+// TERNARY OPERATORS
+
 // condition ? expressionIfTrue : expressionIfFalse
 const readlineSync = require('readline-sync');
 
@@ -15,3 +16,13 @@ console.log(result);
 const grade = userInput > 90 ? 'A': userInput > 80 ? 'B' : userInput > 70 ? 'C':userInput >60 ? 'D': 'F';
 
 console.log(grade);
+
+// Comma Operator
+let n1 ,n2 
+const res = (n1 = 5,n2 = 5,n1+n2)
+console.log(res);
+
+// Unary Operators 
+let i = 0
+console.log(++i);
+console.log(--i);

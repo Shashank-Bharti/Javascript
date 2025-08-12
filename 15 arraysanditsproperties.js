@@ -3,6 +3,11 @@ let students  = ['shashank','ratan','aayush','rajat'];
 console.log(students);
 console.log(typeof students);
 
+// Creating arrays wirh "new keyword Constructor"
+let a = new Array(10,20,30)
+console.log(a);
+
+
 // Mixed arrays 
 let mixedArray = ['Prakash',10,[1,2,3],true,{Name:"Kazuto"}]
 console.log(mixedArray);
@@ -12,6 +17,9 @@ console.log(mixedArray);
 console.log(mixedArray[1]);
 console.log(mixedArray[2][1]);
 console.log(mixedArray[1] + mixedArray[2][1]);
+// Accessing Last array element
+let lst = a[a.length - 1]
+console.log('This is the last element ' + lst);
 
 // iterating over a array
 // For-of Loop
@@ -26,6 +34,11 @@ for (let index in students){
     
 }
 // Modifying arrays 
+// Val assignment to index
+a[1] = 60
+console.log('reassigned array '+ a);
+
+
 // Adding elements via - PUSH Method
 
 students.push('Mina')
@@ -74,3 +87,11 @@ if (lessthanFour){
     console.log("All elements are greater than four");
     
 }
+// Array Concatenation
+
+let frontend = ["HTML", "CSS", "JS", "React"];
+let backend = ["Node.js", "Expess.js"];
+
+let fullstack = frontend.concat(backend)
+console.log(fullstack);
+
