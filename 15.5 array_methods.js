@@ -39,3 +39,20 @@ for (const value of res){
     
 }
 
+// reversal using reduce method
+const a3 = [2,3,4,5,6] 
+let revarr = a3.reduce((acc,curr) =>
+    [curr, ...acc],[]
+)
+console.log(revarr);
+
+// Math min method
+let minVal = Math.min(...a3)
+let maxVal = Math.max(...a3)
+
+
+console.log('The Min element- '+minVal);
+console.log('The Min element- '+maxVal);
+
+let an = a3.slice(1,2)
+console.log(an);
