@@ -1,4 +1,3 @@
-
 let hello_button = document.getElementById("hello")
 let change_pic = document.getElementById("changepic")
 let remove_text = document.getElementById("remove")
@@ -79,3 +78,30 @@ console.log( parent );
 console.log('Child Nodes');
 console.log(document.getElementsByClassName("cont")[0].children);
 
+// DARK MODE
+
+
+let toggle_btn = document.getElementById('mode') 
+let elements_with_light_mode = document.querySelectorAll('.light-mode')
+
+
+let toggle_mode = () => {
+    elements_with_light_mode.forEach(element => {
+        if (element.classList.contains('light-mode')) {
+            element.classList.remove('light-mode');
+            element.classList.add('dark-mode');
+        } else {
+            element.classList.remove('dark-mode');
+            element.classList.add('light-mode');
+        }
+    });
+    
+
+    elements_with_light_mode = document.querySelectorAll('.light-mode, .dark-mode');
+    console.log('Mode toggled');
+}
+
+
+toggle_btn.addEventListener('click', toggle_mode);
+
+document.querySelectorAll()
