@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .light-mode{
+        background-color: rgb(248, 255, 253);
+        color: rgb(9, 10, 10);
+        
+    }
+    .dark-mode{
+        background-color: rgb(32, 34, 33);
+        color: azure;
+        
+        
+    }
+    /*.cont{
+        display: flex;
+        align-items: center;
+        width: 20%;
+        padding: 40px;
+        border: 2px solid black;
+        border-radius: 12px;
+        flex-direction: column;
+        margin: auto;
+        gap: 10px;
+    }
+    .cont2{
+        display: flex;
+        flex-direction: column;
+        width: 70%;
+        align-items: center;
+        padding: 40px;
+        border: 2px solid black;
+        border-radius: 12px;
+        gap: 10px;
+    }
+    img{
+        margin-top: -20px;
+        width: 100%;
+        border-radius: 12px;
+    }
+    button{
+        border-radius: 10px;
+        padding: 10px;
+        width: 120px;
+    }*/
+    /*-------------------------------*/
+    .container{
+        display: flex;
+        
+        place-content: center;
+        padding: 50px;
+        /*background-color: aqua;*/
+        margin-top: 30%;
+        border-radius: 16px;
+
+    }
+    .grandparent{
+        padding: 60px;
+        background-color: rgb(87, 178, 235);
+        text-align: center;
+        
+    }
+    .parent{
+        padding: 60px;
+        background-color: rgb(18, 79, 110);
+        text-align: center;
+        
+    }
+    .child{
+        padding: 60px;
+        background-color: rgb(95, 93, 228);
+        text-align: center;
+        
+    }
+    h2{
+        text-align: center;
+        font-family: Aleo;
+        font-weight: 500;
+    }
+    .btn-container{
+        display: flex;
+        gap: 20px;
+        place-content: center;
+    }
+    button{
+        padding: 10px 20px; 
+        border-radius: 6px;
+        border: 2px solid wheat;
+        font-family: Geist;
+        font-weight: 600;
+        color: whitesmoke;
+        background-color: rgb(71, 71, 71);
+    }
+    button:hover{
+        background-color: rgb(98, 98, 98);
+    }
+</style>
+<body class="light-mode">
+    <div class="cont light-mode">
+        <!-- -------------------------DOM AND BOM---------------------------- -->
+        <!-- <h2 class="light-mode"></h2> -->
+
+        <!-- <img src="https://static1.cbrimages.com/wordpress/wp-content/uploads/2020/11/rem-re-zero-featured.jpg?q=50&fit=crop&w=1100&h=618&dpr=1.5" alt="Rem"  > -->
+        <!-- https://cdn.animenewsnetwork.com/thumbnails/max600x400/cms/feature/169715/ram2.png.jpg -->
+
+        <!-- <div id="cont2" class="cont2 light-mode">
+            <button id="hello" type="button">Say Hello</button>
+            <button id="changepic"type="button">Change Picture</button>
+            <button id="remove"type="button">Remove Text</button>
+            <button id="mode"type="button">Toggle Mode</button>
+            
+        </div> -->
+
+        <!-- --------------------------EVENTS--------------------------- -->
+          <!-- <div class="container"> -->
+
+            <!--<form >
+            <input type="text"id="inp1" placeholder="Input">
+            <button class="btn" type="submit" >Iam a Button</button>
+            </form>
+            <ul>
+                <li>First</li>
+                <li>Second</li>
+                <li>Third</li>
+                <li>Fourth</li>
+                <li>Fifth <ul>
+                    <li>5.1</li>
+                </ul></li>
+            </ul> -->
+            <!-- --------------------Event loop---------------------- -->
+             <!-- <h2></h2> -->
+            <!-- -------------------Event Bubbling--------------------------- -->
+             <!-- <div id= 'grandparent'class="grandparent">
+                <h3>Grandparent</h3>
+                <div id="parent" class="parent">
+                    <h4>Parent</h4>
+                    <div id='child' class="child">
+                        <h5>Child</h5>
+                    </div>
+                </div>
+             </div> -->
+             <!-- ----------------Event delegation---------------------------- -->
+              <h2>Event Delegation</h2>
+              <div id="btn-container">
+              <button id="red">RED</button>
+              <button id="green">GREEN</button>
+              <button id="blue">BLUE</button>
+              <button id="yellow">YELLOW</button>
+              
+              </div>
+         <!-- </div> -->
+    </div>
+
+    <!-- <script src="18 document_object _model_manipulation.js" defer ></script> -->
+    <!-- <script src="19 browser_object_model.js" defer ></script> -->
+    <!-- <script src="20 events.js"></script> -->
+    <!-- <script src="20.1 event_loop.js"></script> -->
+    <!-- <script src="20.2 event_bubbling.js"></script> -->
+    <script src="20.3 event_delegation.js"></script>
+
+</body>
+</html>
