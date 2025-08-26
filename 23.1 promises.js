@@ -82,3 +82,30 @@ Promise.resolve("Task completed")
     .then((result) => console.log(result))
     .catch((error) => console.error(error))
     .finally(() => console.log("Cleanup completed"));
+
+// Chainining with prototype.then()
+Promise.resolve(5)
+    .then((value) => value * 2) // Multiplies by 2
+    .then((value) => value + 3) // Adds 3
+    .then((finalValue) => console.log(finalValue)); // Logs: 13
+
+// sequential with prototype.reduce()
+let tasks = [1, 2, 3];
+tasks.reduce((prevPromise, current) => {
+    return prevPromise.then(() => {
+        return new Promise((resolve) => {
+            console.log(`Processing task ${current}`);
+            setTimeout(resolve, 500); // Simulate async task
+        });
+    });
+}, Promise.resolve());
+
+// Dyanamic promise task 
+function asyncTask(taskName) {
+    return new Promise((resolve) => {
+        setTimeout(() => 
+            resolve(`${taskName} completed`), 1000);
+    });
+}
+asyncTask("Download File").then((result) => 
+    console.log(result));
